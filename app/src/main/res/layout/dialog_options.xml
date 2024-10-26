@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingVertical="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/bg_top_radius"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="OPTIONS"/>
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingVertical="10dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:text="Difficulty: "/>
+            <TableRow
+                android:id="@+id/tr_diff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/tv_prev_diff"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_prev"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/tv_star7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_star"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:tint="#FF0000" />
+                <ImageView
+                    android:id="@+id/tv_next_diff"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_next"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:paddingVertical="10dp"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold"
+                    android:text="Set timer: "/>
+                <ImageView
+                    android:id="@+id/tv_prev_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_prev"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingVertical="10dp"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold"
+                    android:text="10"/>
+                <ImageView
+                    android:id="@+id/tv_next_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_next"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/bg_radius"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold"
+                    android:text="Apply"/>
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/bg_radius"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Cancel"/>
+            </TableRow>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

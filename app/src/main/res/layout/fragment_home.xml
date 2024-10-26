@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97E5EF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_crazy_math" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:paddingVertical="20dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="60dp"
+        android:indeterminateDuration="2000"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateDrawable= "@drawable/ic_rotate"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="#4DEE474F">
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#DD101A"
+            android:text="START"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="#4D9FCC3E">
+        <TextView
+            android:id="@+id/tv_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#326734"
+            android:text="OPTIONS"/>
+    </FrameLayout>
+
+</LinearLayout>
